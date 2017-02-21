@@ -219,7 +219,7 @@ class IP2:
             # default to returning first project
             return projects[-1]
         else:
-            return []
+            return IP2Project(self)
 
     def get_database(self, name):
         """Get a database by file name."""
